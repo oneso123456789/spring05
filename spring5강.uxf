@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>600</x>
+      <y>180</y>
+      <w>90</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Student</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>240</x>
+      <y>10</y>
+      <w>270</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>StudentInfo
+
+생성자()
+setter()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>110</x>
+      <y>180</y>
+      <w>90</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Student</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>270</y>
+      <w>240</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Student.java
+--
+Student student2 = 
+ctx.getBean("student2",Student.class);
+studentInfo.setStudent(student2);
+studentInfo.getStudentInfo();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>120</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+fg=red</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>270</y>
+      <w>240</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>applicationCTX.xml
+--
+&lt;bean id="studentInfo" 
+class="com.javalec.ex.StudentInfo"&gt;
+	&lt;constructor-arg&gt;
+		&lt;ref bean="student1"&gt;
+	&lt;/constructor-arg&gt;
+&lt;/bean&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>140</y>
+      <w>270</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+fg=red</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;80.0</additional_attributes>
+  </element>
+</diagram>
